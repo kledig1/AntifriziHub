@@ -9,15 +9,14 @@ Section:NewButton("Kledi", "kl3d1", function()
 end)
 
 
--- Create TextBox for URL input
-local TextBox = Instance.new("TextBox")
-TextBox.Name = "ImageURL"
-TextBox.Size = UDim2.new(0, 200, 0, 30)
-TextBox.Position = UDim2.new(0.5, -100, 0.2, 0)
-TextBox.PlaceholderText = "Enter Image URL"
-TextBox.Parent = ScreenGui
 
--- Create a TextButton to apply the image
+-- Assuming Section:NewTextBox() creates a TextBox and returns it
+
+local TextBox = Section:NewTextBox("TextboxText", "TextboxInfo", function(txt)
+    print(txt)
+end)
+
+-- Create a TextButton for Apply
 local ApplyButton = Instance.new("TextButton")
 ApplyButton.Name = "ApplyButton"
 ApplyButton.Size = UDim2.new(0, 100, 0, 30)
