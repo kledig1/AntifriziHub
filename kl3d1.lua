@@ -13,17 +13,13 @@ end)
 -- Assuming Section:NewTextBox() creates a TextBox and returns it
 
 local TextBox = Section:NewTextBox("TextboxText", "TextboxInfo", function(txt)
-    print(txt)
-end)
-
--- Create a TextButton for Apply
+    -- Create a TextButton for Apply
 local ApplyButton = Instance.new("TextButton")
 ApplyButton.Name = "ApplyButton"
 ApplyButton.Size = UDim2.new(0, 100, 0, 30)
 ApplyButton.Position = UDim2.new(0.5, -50, 0.3, 0)
 ApplyButton.Text = "Apply"
 ApplyButton.Parent = ScreenGui
-
 ApplyButton.MouseButton1Click:Connect(function()
     local imageURL = TextBox.Text
 
@@ -33,14 +29,18 @@ ApplyButton.MouseButton1Click:Connect(function()
     ImageLabel.Position = UDim2.new(0.5, -16, 0.5, -16)
     ImageLabel.Image = imageURL
     ImageLabel.Parent = game.Workspace:WaitForChild("StarvingArtistFrame") -- Replace with the actual frame's name
-
-    -- Optional: Resize the frame to fit the image
-    local frame = ImageLabel.Parent
+  local frame = ImageLabel.Parent
     frame.Size = UDim2.new(0, 32, 0, 32)
 
     -- Optional: Set BackgroundTransparency to 1 for no background
     frame.BackgroundTransparency = 1
 
+    -- Optional: Resize the frame to fit the image
+end)
+
+
+
+  
     -- Optional: Set other properties as needed
     -- frame.OtherProperty = Value
 
