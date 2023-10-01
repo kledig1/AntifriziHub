@@ -10,5 +10,7 @@ end)
 
 
 Section:NewTextBox("URL", "Enter Url", function(txt)
-	print("Done")
+	local image = 'image link' -- image you want to import
+ local resolutionX = 32 -- usually it's 32 but it might change depending on the frame?
+ local resolutionY = 32 -- usually it's 32 but it might change depending on the frame?
 end)
