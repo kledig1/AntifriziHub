@@ -125,3 +125,4 @@ end)
 
 Label = Page:CreateLabel("Label")
 Label:UpdateLabel("New Title")
+
