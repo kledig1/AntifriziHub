@@ -7,15 +7,15 @@ local tab = main:CreateTab("ImageURL")
 tab:CreateLabel("Main")
 
 tab:CreateToggle("Toggle", function(value)
-    -- Your toggle function here
-end)
-
-main:CreateButton("Minimize", function()
+  main:CreateButton("Minimize", function()
     main:SetVisible(false)
-end)
-main:CreateButton("Maximize", function()
+ end)
+ main:CreateButton("Maximize", function()
     main:SetVisible(true)
-end)
-main:CreateButton("Kill", function()
+ end)
+ main:CreateButton("Kill", function()
     main:Destroy()
 end)
+end)
+
+
