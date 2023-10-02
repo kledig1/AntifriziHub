@@ -6,21 +6,16 @@ local tab = main:CreateTab("ImageURL")
 
 tab:CreateLabel("Main")
 
-
-
-tab:CreateButton("ButtonText", "ButtonInfo", function()
     main:CreateButton("Minimize", function()
         main:SetVisible(false)
     end)
 end)
 
-tab:CreateButton("ButtonText", "ButtonInfo", function()
     main:CreateButton("Maximize", function()
         main:SetVisible(true)
     end)
 end)
 
-tab:CreateButton("ButtonText", "ButtonInfo", function()
     main:CreateButton("Kill", function()
         main:Destroy()
     end)
