@@ -8,19 +8,19 @@ tab:CreateLabel("Main")
 
 
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
+tab:CreateButton("ButtonText", "ButtonInfo", function()
     main:CreateButton("Minimize", function()
         main:SetVisible(false)
     end)
 end)
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
+tab:CreateButton("ButtonText", "ButtonInfo", function()
     main:CreateButton("Maximize", function()
         main:SetVisible(true)
     end)
 end)
 
-Section:NewButton("ButtonText", "ButtonInfo", function()
+tab:CreateButton("ButtonText", "ButtonInfo", function()
     main:CreateButton("Kill", function()
         main:Destroy()
     end)
