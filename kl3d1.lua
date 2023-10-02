@@ -1,10 +1,7 @@
-local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vozoid/ui-libraries/main/drawing/void/source.lua"))()
+local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/cypherdh/VanisUILIB/main/.gitignore'))()
 
-local main = library:Load{
-    Name = "AntifriziHub",
-    SizeX = 600,
-    SizeY = 650,
-    Theme = "Midnight",
-    Extension = "json", -- config file extension
-    Folder = "AntifriziHub" -- config folder name
-}
+local Window = library:CreateWindow("AntifriziHub", "1.0", 10044538000)
+
+local Tab = Window:CreateTab("Main")
+
+local Page = Tab:CreateFrame("Image URL")
