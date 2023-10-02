@@ -6,16 +6,22 @@ local tab = main:CreateTab("ImageURL")
 
 tab:CreateLabel("Main")
 
-tab:CreateToggle("Toggle", function(value)
-  main:CreateButton("Minimize", function()
-    main:SetVisible(false)
- end)
- main:CreateButton("Maximize", function()
-    main:SetVisible(true)
- end)
- main:CreateButton("Kill", function()
-    main:Destroy()
-end)
-end)
 
 
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    main:CreateButton("Minimize", function()
+        main:SetVisible(false)
+    end)
+end)
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    main:CreateButton("Maximize", function()
+        main:SetVisible(true)
+    end)
+end)
+
+Section:NewButton("ButtonText", "ButtonInfo", function()
+    main:CreateButton("Kill", function()
+        main:Destroy()
+    end)
+end)
