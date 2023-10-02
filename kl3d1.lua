@@ -2,7 +2,7 @@ local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/joeen
 
 local main = library:CreateMain("AntifriziHub", "1.0", Enum.KeyCode.LeftAlt)
 
-local tab = main:CreateTab("Yes TAB")
+local tab = main:CreateTab("ImageURL")
 
 tab:CreateLabel("Main")
 
