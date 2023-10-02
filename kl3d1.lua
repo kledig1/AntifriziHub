@@ -1,7 +1,11 @@
-local library = loadstring(game:HttpGet('https://raw.githubusercontent.com/cypherdh/VanisUILIB/main/.gitignore'))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/exploiting/main/EngoUILIB_V2.lua", true))()
 
-local Window = library:CreateWindow("AntifriziHub", "1.0", 10044538000)
+local main = library:CreateMain("AntifriziHub", "1.0", Enum.KeyCode.LeftAlt)
 
-local Tab = Window:CreateTab("Main")
+local tab = main:CreateTab("Yes TAB")
 
-local Page = Tab:CreateFrame("Image URL")
+tab:CreateLabel("Main")
+
+tab:CreateToggle("Toggle", function(value)
+   
+end);
