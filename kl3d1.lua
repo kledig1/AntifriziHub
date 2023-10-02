@@ -1,4 +1,10 @@
-loadstring(game:HttpGet('https://raw.githubusercontent.com/1uaxx/yunv2/main/librarysource.lua'))()
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vozoid/ui-libraries/main/drawing/void/source.lua"))()
 
-local Library = initLibrary()
-local Window = Library:Load({name = "xan", sizeX = 425, sizeY = 512, color = Color3.fromRGB(255, 255, 255)})
+local main = library:Load{
+    Name = "AntifriziHub",
+    SizeX = 600,
+    SizeY = 650,
+    Theme = "Midnight",
+    Extension = "json", -- config file extension
+    Folder = "AntifriziHub" -- config folder name
+}
