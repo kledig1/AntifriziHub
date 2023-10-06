@@ -14,7 +14,7 @@ local SectionKledi = Tab:Section({
    Text = "Art generator"
 })
 
-SectionKledi:Input({
+local SectionKledi:Input({
     Text = "Enter the image URL",
     Callback = function(url)
         local Pixels = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://saurl.notxaxaa.repl.co/convert?url=" .. tostring(url)))
