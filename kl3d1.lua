@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/x4nto/Resonix-Hub/xantoscripts/Library.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/kledig1/AntifriziHub/main/lib.lua"))()
 local Window = Library.CreateLib("AntifriziHub")
 local Tab = Window:NewTab("main")
 
