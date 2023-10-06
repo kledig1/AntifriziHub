@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/x4nto/Resonix-Hub/xantoscripts/Library.lua"))()
-local Window = Library.CreateLib("AntifriziHub", "DarkTheme")
+local Window = Library.CreateLib("AntifriziHub")
 local Tab = Window:NewTab("main")
 
 local Button = Tab:main("icespice", function()
