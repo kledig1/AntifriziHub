@@ -1,4 +1,4 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/x4nto/Resonix-Hub/xantoscripts/Library.lua"))()
 local Window = Library.CreateLib("AntifriziHub", "DarkTheme")
 local Tab = Window:NewTab("main")
 
