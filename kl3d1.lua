@@ -28,3 +28,8 @@ SectionKledi:Input({
         end
     end
 })
+
+local buttonTextButton = Instance.new("Kill")
+
+end
+
