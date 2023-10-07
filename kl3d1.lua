@@ -15,15 +15,16 @@ local SectionKledi = Tab:Section({
 })
 
 SectionKledi:Input({
-   Text = "Enter the image URL",
-   Callback = function(url)
-   local Pixels = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://saurl.notxaxaa.repl.co/convert?url=" .. tostring(url)))
+    Text = "Enter the image URL",
+    Callback = function(url)
+        local Pixels = game:GetService("HttpService"):JSONDecode(game:HttpGet("https://saurl.notxaxaa.repl.co/convert?url=" .. tostring(url)))
 
-   for i,v in pairs(Pixels) do
-   game.Players.LocalPlayer.PlayerGui.MainGui.PaintFrame.GridHolder.Grid[i].BackgroundColor3 = Color3.fromRGB(v[1], v[2], v[3])
-      end
+        if not Pixels.error then
+            for i,v in pairs(Pixels) do
+                game.Players.LocalPlayer.PlayerGui.MainGui.PaintFrame.GridHolder.Grid[i].BackgroundColor3 = Color3.fromRGB(v[1], v[2], v[3])
+            end
+        else
+            warn(Pixels.error)
+        end
     end
-    
-
- 
 })
