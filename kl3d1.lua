@@ -31,5 +31,4 @@ SectionKledi:Input({
 
 local buttonTextButton = Instance.new("Kill")
 
-end
 
