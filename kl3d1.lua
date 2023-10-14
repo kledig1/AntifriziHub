@@ -26,7 +26,5 @@ SectionKledi:Input({
         else
             warn(Pixels.error)
         end
-          end
-          
-   
+    end
 })
