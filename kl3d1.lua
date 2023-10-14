@@ -36,7 +36,7 @@ local Tab = Window:Tab({
  
  
 local SectionKled1 = Tab:Section({
-    Text = "Qr Code"
+    Text = "Qr Codee"
 })
 
 local SectionKled1 = Tab:Button({
