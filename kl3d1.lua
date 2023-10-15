@@ -3,7 +3,7 @@ Library.Theme = "Dark"
 local Flags = Library.Flags
 
 local Window = Library:Window({
-   Text = "Antifrizi Hub"
+   Text = "Antifrizi Hub 1.0"
 })
 
 local Tab = Window:Tab({
