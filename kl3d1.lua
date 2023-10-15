@@ -39,7 +39,7 @@ local SectionKled1 = Tab:Section({
     
 })
   
-local SectionKled1 = Tab:Button({
+local SectionKled1 = Section:Button({
     Text = "Xaxa"
     
 })
