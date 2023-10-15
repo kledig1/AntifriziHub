@@ -44,3 +44,6 @@ local SectionKled1 = Tab:Button({
     
 })
 
+local SectionKledi = Tab:Button({
+  Text = "Art"
+})
