@@ -3,7 +3,7 @@ Library.Theme = "Dark"
 local Flags = Library.Flags
 
 local Window = Library:Window({
-   Text = "Antifrizi Hub 1.0"
+   Text = "Antifrizi Hub"
 })
 
 local Tab = Window:Tab({
@@ -32,6 +32,11 @@ SectionKledi:Input({
 
 local Tab = Window:Tab({
     Text = "Comunity Arts"
+})
+
+local SectionKled1 = Tab:Section({
+    Text = "Art"
+    
 })
   
 local SectionKled1 = Tab:Button({
