@@ -39,11 +39,9 @@ local SectionKled1 = Tab:Section({
     
 })
   
-local SectionKled1 = Tab:Button({
-    Text = "Xaxa"
-    
-})
-
-local SectionKledi = Tab:Button({
-  Text = "Art"
+SectionKled1:Button({
+    Text = "Art1",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/KUjmxLpp"))()
+    end
 })
