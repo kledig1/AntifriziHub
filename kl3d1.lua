@@ -45,3 +45,11 @@ SectionKled1:Button({
         loadstring(game:HttpGet("https://pastebin.com/raw/KUjmxLpp"))()
     end
 })
+
+
+SectionKled1:Button({
+    Text = "Zoro",
+    Callback = function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/KUjmxLpp"))()
+    end
+})
